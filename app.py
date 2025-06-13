@@ -31,9 +31,7 @@ def load_industries():
 
 
 def fetch_news_from_rss():
-   # feed_url = 'https://www.moneycontrol.com/rss/MCtopnews.xml'  # Example RSS feed URL
-    feed_url = 'https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114'
-    feed_url = 'https://www.cnbctv18.com/commonfeeds/v1/cne/rss/business.xml'
+    feed_url = "https://economictimes.indiatimes.com/rssfeedsdefault.cms"  # Example RSS feed URL
     feed = feedparser.parse(feed_url)
     news_items = []
     for entry in feed.entries[:10]:  # Limit to the first 10 news items
